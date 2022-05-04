@@ -28,7 +28,7 @@ public class CorrentistaController {
 	public List<Correntista> findAll(){
 		return repository.findAll();
 	}
-	
+		
 	@PostMapping
 	public void save(@RequestBody NovoCorrentista correntista) {
 		service.save(correntista);
